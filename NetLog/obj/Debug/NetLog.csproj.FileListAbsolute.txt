@@ -1,0 +1,10 @@
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\bin\Debug\NetLog.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\bin\Debug\NetLog.pdb
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\obj\Debug\NetLog.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\obj\Debug\NetLog.pdb
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\bin\Debug\Genersoft.MDM.Pub.Server.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\bin\Debug\TinyMapper.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\bin\Debug\MySql.Data.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\bin\Debug\Genersoft.MDM.Pub.Common.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\obj\Debug\NetLog.csprojResolveAssemblyReference.cache
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLog\bin\Debug\NetLog.config

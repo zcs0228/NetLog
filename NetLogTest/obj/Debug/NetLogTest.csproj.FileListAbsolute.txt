@@ -1,0 +1,13 @@
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\NetLogTest.exe.config
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\NetLogTest.exe
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\NetLogTest.pdb
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\NetLog.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\TinyMapper.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\Genersoft.MDM.Pub.Server.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\MySql.Data.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\Genersoft.MDM.Pub.Common.dll
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\NetLog.pdb
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\obj\Debug\NetLogTest.csprojResolveAssemblyReference.cache
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\obj\Debug\NetLogTest.exe
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\obj\Debug\NetLogTest.pdb
+C:\Users\zhangcs\Desktop\主数据7.0.1\日志信息\NetLog\NetLogTest\bin\Debug\NetLog.config
