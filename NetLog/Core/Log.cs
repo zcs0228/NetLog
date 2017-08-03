@@ -21,7 +21,6 @@ namespace NetLog.Core
                 return _logCategory;
             }
         }
-
         public Log(LogCategory logCategory)
         {
             _logCategory = logCategory;
@@ -29,7 +28,7 @@ namespace NetLog.Core
 
         public void Debug(object message)
         {
-            if (_logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -41,7 +40,7 @@ namespace NetLog.Core
 
         public void Debug(object message, Exception exception)
         {
-            if (_logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -53,7 +52,7 @@ namespace NetLog.Core
 
         public void Error(object message)
         {
-            if (_logCategory.MiniLevel > Level.ERROR) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -65,7 +64,7 @@ namespace NetLog.Core
 
         public void Error(object message, Exception exception)
         {
-            if (_logCategory.MiniLevel > Level.ERROR) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -77,7 +76,7 @@ namespace NetLog.Core
 
         public void Fatal(object message)
         {
-            if (_logCategory.MiniLevel > Level.FATAL) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -89,7 +88,7 @@ namespace NetLog.Core
 
         public void Fatal(object message, Exception exception)
         {
-            if (_logCategory.MiniLevel > Level.FATAL) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -101,7 +100,7 @@ namespace NetLog.Core
 
         public void Info(object message)
         {
-            if (_logCategory.MiniLevel > Level.INFO) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -113,7 +112,7 @@ namespace NetLog.Core
 
         public void Info(object message, Exception exception)
         {
-            if (_logCategory.MiniLevel > Level.INFO) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -125,7 +124,7 @@ namespace NetLog.Core
 
         public void Warn(object message)
         {
-            if (_logCategory.MiniLevel > Level.WARN) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)
@@ -137,7 +136,7 @@ namespace NetLog.Core
 
         public void Warn(object message, Exception exception)
         {
-            if (_logCategory.MiniLevel > Level.WARN) return; //等级高于该方法等级时不记录日志
+            if (_logCategory == null || _logCategory.MiniLevel > Level.DEBUG) return; //等级高于该方法等级时不记录日志
             string methodInfo = GetMethodInfo();
 
             foreach (LogListener item in _logCategory.LogListeners)

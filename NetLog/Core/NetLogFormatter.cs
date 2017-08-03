@@ -10,8 +10,7 @@ namespace NetLog.Core
     {
         public static string FileNameFormatter(string fileName)
         {
-            return fileName + DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() 
-                + DateTime.Now.Day.ToString() + ".log";
+            return fileName + DateTime.Now.ToString("yyyyMMdd") + ".log";
         }
 
         public static string LogMessageFormatter(string formatter, string message)
@@ -27,13 +26,18 @@ namespace NetLog.Core
 
         public static string LogMessageFormatter(string formatter, string methodInfo, string message)
         {
-            message = methodInfo + Environment.NewLine + message;
+            string time = "DateTime:" + DateTime.Now.ToString();
+            message = time + Environment.NewLine + methodInfo + Environment.NewLine + "LogContent:" + message;
             return message;
         }
 
         public static string LogMessageFormatter(string formatter, string methodInfo, string message,
             Exception exception)
         {
+            string time = "DateTime:" + DateTime.Now.ToString();
+            string errMsg = "ExceptionMessage:" + exception.Message;
+            message = time + Environment.NewLine + methodInfo + Environment.NewLine + "LogContent:" + message
+                + Environment.NewLine + errMsg;
             return message;
         }
     }

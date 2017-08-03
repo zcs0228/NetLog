@@ -27,7 +27,6 @@ namespace NetLog
             {
                 InitLogConfig(logCategory);
                 Log netLog = new Log(_logCategory);
-                //_logsDic.Add(logCategory, netLog);
                 return netLog;
             }
         }
@@ -41,13 +40,20 @@ namespace NetLog
             TinyMapperHelper.TinyMapperConfig();
 
             #region 获取XML配置信息
-            _logCategory = XMLRepository.GetNetLogConfig(logCategory);
+            //_logCategory = XMLRepository.GetNetLogConfig(logCategory);
             #endregion 获取XML配置信息
 
             #region 获取数据库配置信息
-            //DBRepository dbr = new DBRepository();
-            //DBLogCategory dbCategory = dbr.GetLogCategory(logCategory);
-            //_logCategory = TinyMapper.Map<LogCategory>(dbCategory);
+            DBRepository dbr = new DBRepository();
+            DBLogCategory dbCategory = dbr.GetLogCategoryWithDefaultListener(logCategory);
+            if (dbCategory == null)
+            {
+                _logCategory = null;
+            }
+            else
+            {
+                _logCategory = TinyMapper.Map<LogCategory>(dbCategory);
+            }
             #endregion 获取数据库配置信息
         }
     }
